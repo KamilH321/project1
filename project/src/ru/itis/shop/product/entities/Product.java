@@ -3,16 +3,14 @@ package ru.itis.shop.product.entities;
 public class Product {
     Integer id;
     String name;
-    String description;
     Integer price;
-    String categoty;
+    String type;
 
     public Product(Integer id, String name, String description, Integer price, String categoty) {
         this.id = id;
         this.name = name;
-        this.description = description;
         this.price = price;
-        this.categoty = categoty;
+        this.type = categoty;
     }
 
     public Integer getId() {
@@ -23,15 +21,11 @@ public class Product {
         return name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     public Integer getPrice() {
         return price;
     }
 
     public String getCategoty() {
-        return categoty;
+        return type;
     }
 }
